@@ -5,8 +5,8 @@
    Tutorial 13
    Case Problem 2
 
-   Author: 
-   Date:   
+   Author: Christian Gregorio 
+    Date: 4.19.19 
    
    Filename: dl_expenses.js
    
@@ -39,10 +39,15 @@
 
 
 function formatNumber(val, decimals) {
-   return val.toLocaleString(undefined, {minimumFractionDigits: decimals, 
-                                         maximumFractionDigits: decimals});
+      return val.toLocaleString(undefined, {
+            minimumFractionDigits: decimals,
+            maximumFractionDigits: decimals
+      });
 }
 
 function formatUSCurrency(val) {
-   return val.toLocaleString('en-US', {style: "currency", currency: "USD"} );
+      return val.toLocaleString('en-US', {
+            style: "currency",
+            currency: "USD"
+      });
 }
